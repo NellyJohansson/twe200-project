@@ -11,7 +11,7 @@ export default function Navigation() {
   return (
     //fixerad navbar som alltid syns högst upp
     <nav className="bg-warm-black fixed w-full z-50 border-b border-sand/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-10 sm:px-12 lg:px-8">
         <div className="flex justify-between h-16">
 
           {/* logotypen - klickbar länk till startsidan */}
@@ -37,7 +37,7 @@ export default function Navigation() {
               Services
             </Link>
             {/* CTA-knapp med annan stil */}
-            <Link href="/booking" className="bg-primary text-cream px-6 py-2 rounded-full hover:bg-primary-light transition text-sm tracking-wide">
+            <Link href="/booking" className="bg-primary text-cream px-6 py-2 rounded-full hover:bg-primary-light transition text-sm tracking-wide font-semibold">
               Book Now
             </Link>
           </div>
@@ -66,7 +66,7 @@ export default function Navigation() {
       {/* mobilmenyn, visas bara när isOpen är true */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-4 pt-2 pb-4 space-y-2 bg-warm-black border-t border-sand/20">
+          <div className="px-10 pt-2 pb-4 space-y-2 bg-warm-black border-t border-sand/20">
             <Link href="/" className="block px-3 py-3 text-cream/80 hover:text-sand transition text-sm">
               Home
             </Link>
@@ -76,7 +76,7 @@ export default function Navigation() {
             <Link href="/services" className="block px-3 py-3 text-cream/80 hover:text-sand transition text-sm">
               Services
             </Link>
-            <Link href="/booking" className="block px-3 py-3 bg-primary text-cream hover:bg-primary-light rounded-full text-center text-sm mt-2">
+            <Link href="/booking" className="block px-3 py-3 bg-primary text-cream hover:bg-primary-light rounded-full text-center text-sm mt-2 font-semibold">
               Book Now
             </Link>
           </div>

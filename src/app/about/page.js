@@ -7,7 +7,7 @@ export default function About() {
     <div className="pt-16">
       {/* Hero Section - introduktion med porträttbild */}
       <section className="bg-warm-black py-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-10 sm:px-12 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <p className="text-sand text-sm tracking-widest mb-4">ABOUT ME</p>
@@ -20,7 +20,7 @@ export default function About() {
               </p>
             </div>
             <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-              <div className="rounded-2xl overflow-hidden w-80 md:w-96 h-96 md:h-[28rem]">
+              <div className="rounded-2xl overflow-hidden w-64 sm:w-80 md:w-96 h-80 sm:h-96 md:h-[28rem]">
                 <img
                   src="/images/alma.jpeg"
                   alt="Alma portrait"
@@ -34,7 +34,7 @@ export default function About() {
 
       {/* Video Section - visar Alma i aktion med video och bilder */}
       <section className="py-20 bg-primary">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-10 sm:px-12 lg:px-8">
           <p className="text-sand text-sm tracking-widest mb-4 text-center">SEE ME IN ACTION</p>
           <h2 className="text-3xl font-light text-cream mb-8 text-center">
             Training is my passion
@@ -42,7 +42,7 @@ export default function About() {
           {/* grid med 3 kolumner: bild-video-bild layout */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
             {/* vänster bild */}
-            <div className="rounded-2xl overflow-hidden shadow-2xl max-w-xs mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-2xl max-w-[250px] sm:max-w-xs mx-auto">
               <img
                 src="/images/hyrox2.jpeg"
                 alt="Alma training"
@@ -51,7 +51,7 @@ export default function About() {
             </div>
 
             {/* video i mitten med controls för att användaren kan spela/pausa */}
-            <div className="rounded-2xl overflow-hidden shadow-2xl max-w-xs mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-2xl max-w-[250px] sm:max-w-xs mx-auto">
               <video
                 controls
                 className="w-full aspect-[3/4] object-cover"
@@ -64,7 +64,7 @@ export default function About() {
             </div>
 
             {/* höger bild */}
-            <div className="rounded-2xl overflow-hidden shadow-2xl max-w-xs mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-2xl max-w-[250px] sm:max-w-xs mx-auto">
               <img
                 src="/images/running2.jpeg"
                 alt="Alma running"
@@ -77,7 +77,7 @@ export default function About() {
 
       {/* MY BACKGROUND - Almas bakgrund med psykologi och elitidrott */}
       <section className="py-20 bg-warm-black">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-10 sm:px-12 lg:px-8">
           {/* grid med text och bild sida vid sida */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -98,7 +98,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden max-w-xs mx-auto lg:ml-16">
+            <div className="rounded-2xl overflow-hidden max-w-[250px] sm:max-w-xs mx-auto lg:ml-16">
               <img
                 src="/images/running.jpeg"
                 alt="Alma running"
@@ -110,8 +110,8 @@ export default function About() {
       </section>
 
       {/* ACHIEVEMENTS - visar Almas tävlingsmeriter */}
-      <section className="py-16 bg-accent">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-accent">
+        <div className="max-w-7xl mx-auto px-10 sm:px-12 lg:px-8">
           <p className="text-black text-sm tracking-widest mb-8 text-center">MY ACHIEVEMENTS</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
@@ -132,7 +132,7 @@ export default function About() {
 
       {/* WHAT I FOCUS ON - olika träningsområden som Alma fokuserar på */}
       <section className="py-20 bg-warm-black">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-10 sm:px-12 lg:px-8">
           <p className="text-sand text-sm tracking-widest mb-4">WHAT I FOCUS ON</p>
           <h2 className="text-3xl font-light text-cream mb-12">My Areas</h2>
           {/* fyra kort i 2x2 grid */}
@@ -171,7 +171,7 @@ export default function About() {
 
       {/* EDUCATION - Almas utbildning och meriter */}
       <section className="py-20 bg-primary">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-10 sm:px-12 lg:px-8">
           {/* grid med text och bild */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -214,7 +214,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden max-w-xs mx-auto lg:ml-16">
+            <div className="rounded-2xl overflow-hidden max-w-[250px] sm:max-w-xs mx-auto lg:ml-16">
               <img
                 src="/images/graduation.jpg"
                 alt="Alma graduation"
@@ -227,7 +227,7 @@ export default function About() {
 
       {/* CTA - uppmanar besökare att boka konsultation */}
       <section className="py-20 bg-warm-black">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-3xl mx-auto px-10 sm:px-12 lg:px-8 text-center">
           <h2 className="text-3xl font-light text-cream mb-6">
             Let&apos;s start together
           </h2>

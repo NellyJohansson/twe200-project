@@ -7,7 +7,7 @@ export default function Services() {
     <div className="pt-16">
       {/* Hero Section - introduktion till tjänster */}
       <section className="bg-warm-black py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-10 sm:px-12 lg:px-8">
           <p className="text-sand text-sm tracking-widest mb-4">SERVICES</p>
           <h1 className="text-4xl md:text-5xl font-light text-cream mb-6">
             PT Packages
@@ -21,11 +21,11 @@ export default function Services() {
 
       {/* Services Grid - grid med tre olika paket */}
       <section className="py-20 bg-primary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-10 sm:px-12 lg:px-8">
           {/* responsive grid: 1 kolumn mobil, 2 tablet, 3 desktop */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Single Session - engångspass */}
-            <div className="bg-warm-black/30 rounded-2xl p-8">
+            <div className="bg-warm-black/30 rounded-2xl p-8 border-2 border-sand flex flex-col">
               <h3 className="text-xl font-medium text-cream mb-2">Single Session</h3>
               <p className="text-sand text-sm mb-6">Perfect to try it out</p>
               <p className="text-3xl font-light text-cream mb-6">
@@ -53,14 +53,14 @@ export default function Services() {
               </ul>
               <Link
                 href="/booking"
-                className="block text-center bg-sand/20 text-cream py-3 rounded-full hover:bg-sand/30 transition"
+                className="block text-center bg-sand text-primary py-3 rounded-full hover:bg-accent transition font-medium mt-auto"
               >
                 Book Session
               </Link>
             </div>
 
             {/* 5-pack - mest populära paketet med "Popular"-badge */}
-            <div className="bg-warm-black/30 rounded-2xl p-8 border-2 border-sand relative">
+            <div className="bg-warm-black/30 rounded-2xl p-8 border-2 border-sand relative flex flex-col">
               {/* Popular-badge positionerad ovanför kortet */}
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-sand text-primary px-4 py-1 rounded-full text-xs font-medium">
                 Popular
@@ -98,14 +98,14 @@ export default function Services() {
               </ul>
               <Link
                 href="/booking"
-                className="block text-center bg-sand text-primary py-3 rounded-full hover:bg-accent transition font-medium"
+                className="block text-center bg-sand text-primary py-3 rounded-full hover:bg-accent transition font-medium mt-auto"
               >
                 Choose 5-Pack
               </Link>
             </div>
 
             {/* 10-pack - bäst värde för långsiktig utveckling */}
-            <div className="bg-warm-black/30 rounded-2xl p-8">
+            <div className="bg-warm-black/30 rounded-2xl p-8 border-2 border-sand flex flex-col">
               <h3 className="text-xl font-medium text-cream mb-2">10-Pack</h3>
               <p className="text-sand text-sm mb-6">For long-term development</p>
               <p className="text-3xl font-light text-cream mb-6">
@@ -145,7 +145,7 @@ export default function Services() {
               </ul>
               <Link
                 href="/booking"
-                className="block text-center bg-sand/20 text-cream py-3 rounded-full hover:bg-sand/30 transition"
+                className="block text-center bg-sand text-primary py-3 rounded-full hover:bg-accent transition font-medium mt-auto"
               >
                 Choose 10-Pack
               </Link>
@@ -156,7 +156,7 @@ export default function Services() {
 
       {/* Online Coaching - online träningscoaching för de som vill träna själva */}
       <section className="py-20 bg-warm-black">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-10 sm:px-12 lg:px-8">
           <p className="text-sand text-sm tracking-widest mb-4">ONLINE</p>
           <h2 className="text-3xl font-light text-cream mb-8">Online Coaching</h2>
           <div className="border border-sand/20 rounded-2xl p-8">
@@ -213,7 +213,7 @@ export default function Services() {
 
       {/* Image Gallery - bildgalleri med träningsbilder */}
       <section className="py-20 bg-accent">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-10 sm:px-12 lg:px-8">
           <p className="text-primary text-sm tracking-widest mb-4 text-center">TRAINING</p>
           <h2 className="text-3xl font-light text-primary mb-12 text-center">
             Glimpses from my sessions
@@ -221,22 +221,22 @@ export default function Services() {
           {/* grid med bilder, hover-effekt med scale */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="rounded-xl overflow-hidden">
-              <img src="/images/hyrox.jpeg" alt="Training" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-300" />
+              <img src="/images/hyrox.jpeg" alt="Training" className="w-full h-40 sm:h-48 md:h-64 object-cover hover:scale-105 transition duration-300" />
             </div>
             <div className="rounded-xl overflow-hidden">
-              <img src="/images/running.jpeg" alt="Training" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-300" />
+              <img src="/images/running.jpeg" alt="Training" className="w-full h-40 sm:h-48 md:h-64 object-cover hover:scale-105 transition duration-300" />
             </div>
             <div className="rounded-xl overflow-hidden">
-              <img src="/images/gym.jpeg" alt="Training" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-300" />
+              <img src="/images/gym.jpeg" alt="Training" className="w-full h-40 sm:h-48 md:h-64 object-cover hover:scale-105 transition duration-300" />
             </div>
             <div className="rounded-xl overflow-hidden">
-              <img src="/images/gym2.jpeg" alt="Training" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-300" />
+              <img src="/images/gym2.jpeg" alt="Training" className="w-full h-40 sm:h-48 md:h-64 object-cover hover:scale-105 transition duration-300" />
             </div>
             <div className="rounded-xl overflow-hidden">
-              <img src="/images/medals.jpeg" alt="Training" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-300" />
+              <img src="/images/medals.jpeg" alt="Training" className="w-full h-40 sm:h-48 md:h-64 object-cover hover:scale-105 transition duration-300" />
             </div>
             <div className="rounded-xl overflow-hidden">
-              <img src="/images/hyrox2.jpeg" alt="Training" className="w-full h-48 md:h-64 object-cover hover:scale-105 transition duration-300" />
+              <img src="/images/hyrox2.jpeg" alt="Training" className="w-full h-40 sm:h-48 md:h-64 object-cover hover:scale-105 transition duration-300" />
             </div>
           </div>
         </div>
@@ -244,7 +244,7 @@ export default function Services() {
 
       {/* Free Consultation - CTA för gratis konsultation */}
       <section className="py-20 bg-warm-black">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-3xl mx-auto px-10 sm:px-12 lg:px-8 text-center">
           <h2 className="text-3xl font-light text-cream mb-6">
             Not sure what suits you?
           </h2>

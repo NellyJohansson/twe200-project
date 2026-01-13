@@ -16,7 +16,7 @@ export default function Home() {
             className="w-full h-full object-cover object-center"
           />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
+        <div className="max-w-6xl mx-auto px-10 sm:px-12 lg:px-8 py-16 relative z-10">
           <div className="max-w-2xl">
             {/* textShadow gör att texten syns bra över bilden */}
             <p className="text-sand text-sm tracking-widest mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>PERSONAL TRAINER</p>
@@ -48,14 +48,14 @@ export default function Home() {
       </section>
 
       {/* WHAT I OFFER - grid med fyra tjänstekort som visar vad Alma erbjuder */}
-      <section className="py-16 bg-primary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-primary">
+        <div className="max-w-6xl mx-auto px-10 sm:px-12 lg:px-8">
           <p className="text-sand text-sm tracking-widest mb-4">WHAT I OFFER</p>
           <h2 className="text-3xl md:text-4xl font-light text-cream mb-2">
             Holistic Training
           </h2>
-          {/* responsive grid: 1 kolumn på mobil, 2 på tablet, 4 på desktop */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* responsive grid: 2 kolumner mobil/tablet, 4 kolumner desktop */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6">
             <div className="bg-warm-black/30 p-6 rounded-2xl">
               <div className="w-12 h-12 bg-sand/20 rounded-full flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-sand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -106,7 +106,7 @@ export default function Home() {
 
       {/* ABOUT PREVIEW - kort presentation av Alma med bild och länk till About-sidan */}
       <section className="py-20 bg-warm-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-10 sm:px-12 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-sand text-sm tracking-widest mb-4">ABOUT ME</p>
@@ -131,11 +131,11 @@ export default function Home() {
                 </svg>
               </Link>
             </div>
-            <div className="rounded-2xl overflow-hidden">
+            <div className="rounded-2xl overflow-hidden max-w-[280px] sm:max-w-none mx-auto">
               <img
                 src="/images/medals2.jpeg"
                 alt="Alma training"
-                className="w-full h-96 object-cover"
+                className="w-full h-80 sm:h-80 md:h-96 object-cover"
               />
             </div>
           </div>
@@ -143,8 +143,8 @@ export default function Home() {
       </section>
 
       {/* ACHIEVEMENTS - visar Almas tävlingsresultat i HYROX och maraton */}
-      <section className="py-16 bg-accent">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-accent">
+        <div className="max-w-6xl mx-auto px-10 sm:px-12 lg:px-8">
           <p className="text-black text-sm tracking-widest mb-8 text-center">MY ACHIEVEMENTS</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
@@ -165,7 +165,7 @@ export default function Home() {
 
       {/* CTA (Call To Action) - uppmanar besökaren att boka en gratis konsultation */}
       <section className="py-20 bg-warm-black">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-3xl mx-auto px-10 sm:px-12 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-light text-cream mb-6">
             Ready to feel stronger?
           </h2>

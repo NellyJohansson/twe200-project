@@ -8,7 +8,7 @@ export default function Booking() {
     <div className="pt-16">
       {/* Hero Section - introduktion */}
       <section className="bg-warm-black py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-10 sm:px-12 lg:px-8">
           <p className="text-sand text-sm tracking-widest mb-4">BOOK</p>
           <h1 className="text-4xl md:text-5xl font-light text-cream mb-6">
             Book a Session
@@ -21,7 +21,7 @@ export default function Booking() {
 
       {/* Koalendar Booking Section - iframe som visar bokningskalendern */}
       <section className="py-20 bg-primary">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-10 sm:px-12 lg:px-8">
           {/* iframe som embeds Koalendar bokningssystemet */}
           <iframe
             src={`${KOALENDAR_URL}?embed=true`}
@@ -49,10 +49,10 @@ export default function Booking() {
 
       {/* Contact Info - kontaktinformation med ikoner */}
       <section className="py-20 bg-warm-black">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-10 sm:px-12 lg:px-8">
           <p className="text-sand text-sm tracking-widest mb-4 text-center">CONTACT INFO</p>
           {/* grid med 4 kontaktkort: email, telefon, plats, instagram */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-12 h-12 bg-sand/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-sand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
